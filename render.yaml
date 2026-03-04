@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: dokon
+    env: python
+    buildCommand: pip install flask flask-cors
+    startCommand: python backend/app.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
